@@ -10,10 +10,10 @@ const pool = new Pool({
 });
 
 pool.on('connect', () => {
-  console.log('Connected to Supabase Postgres');
+  console.log('Connected to Postgres');
 });
 pool.on('error', (err) => {
-  console.error('[DB] Unexpected error on idle client', err);
+  console.error('db Unexpected error on idle client', err);
 });
 
 export const saveOrderToHistory = async (orderId: string, status: string, details: any) => {
