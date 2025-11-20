@@ -57,7 +57,7 @@ app.post('/api/orders/execute', async (req: any, reply) => {
 
   await orderQueue.add('market-order', { orderId, inputToken, outputToken, amount });
 
-  return { success: true, orderId, wsUrl: `ws://localhost:3000/ws/orders/${orderId}` };
+  return { success: true, orderId, wsUrl: `ws://eterna-backend-orderexecution.onrender.com/ws/orders/${orderId}` };
 });
 
 app.register(async (fastify) => {
