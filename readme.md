@@ -110,7 +110,7 @@ Runs 12 unit and integration tests covering Routing, Validation, and Architectur
 
 **WebSocket Stream**
 
-- **URL**: ws://localhost:3000/ws/orders/{orderId}
+- **URL**: ws://eterna-backend-orderexecution.onrender.com/ws/orders/{orderId}
 
 **Events:**
 
@@ -142,3 +142,4 @@ When running the engine with concurrent orders, you will see real-time price com
     [1a6d88f5] CONFIRMED
     [1a6d88f5] CONFIRMED: 5xhno6i8...sol
     [DB] Order 1a6d88f5-9a35-4315-8de5-7d4b4ca8d305 saved/updated in Supabase.
+
